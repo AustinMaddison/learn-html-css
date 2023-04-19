@@ -1,0 +1,184 @@
+<!-- unique isnt visible on the page -->
+<style>
+  /* css selector */
+  /* button { */
+    .subscribe-button{
+    /* css property     css value */
+    background-color: #cc0000;
+    color: white;
+    border: none;
+
+    /* setting height and width like this isn't a good idea */
+    /* bcs what if your text is bigger than expected? */
+    /* width: 114px;
+    height: 36px; */
+
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    /* margin = space in css */
+    /* css box model, allows to add space to inside and outside of an element */
+    margin-right: 8px;
+    margin-left: 20px;
+
+
+
+    /* Since we are using apddign instead of fixed dimensions, the button resizes depending on the the size of the text */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+  
+    /* since by default the text aligns with all the surrounding text, we can overide this using an alignment */
+    vertical-align: top;
+
+
+
+    transition: opacity .2s;
+  }
+
+  /* style that will only apply when we hover over a button */
+  /* sudo class, adds extra styles in a certain situation ex. hover */
+  .subscribe-button:hover {
+    opacity: 70%;
+
+  }
+  .subscribe-button:active {
+    opacity: 40%;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.1s;
+  }
+
+  
+  /* target the class */
+  .join-button{
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(24, 112, 189);
+    border-radius: 2px;
+    border-width: 1px;
+    color: rgb(24, 112, 189);
+    font-size: 14px;
+
+
+    /* not going to use the fixed dimensions */
+    /* height: 36px; */
+    /* width: 60px; */
+
+    /* since we want the height of the buttons to be the same you got to compensate the padding, ex here: 1px border => padding top and bottom -1px */
+    padding-top: 9px;
+    padding-bottom: 9px; 
+    padding-left: 16px;
+    padding-right: 16px;
+
+    vertical-align: top;
+
+
+    cursor: pointer;
+    margin-right: 8px;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .7s;
+  }
+  .join-button:hover{
+    background-color: rgb(24, 112, 189);
+    color: white;
+
+  }
+  .join-button:active{
+    opacity: 40%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.05s;
+  }
+
+  .join-button-modified{
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(24, 112, 189);
+    border-radius: 2px;
+    border-width: 1px;
+    color: rgb(24, 112, 189);
+    font-size: 14px;
+
+
+    /* not going to use the fixed dimensions */
+    /* height: 36px; */
+    /* width: 60px; */
+    padding: 20px 1px 1px 20px;
+
+
+ 
+
+    cursor: pointer;
+    margin-right: 8px;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .7s;
+  }
+  .join-button-modified:hover{
+    background-color: rgb(24, 112, 189);
+    color: white;
+
+  }
+  .join-button-m:active{
+    opacity: 40%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.05s;
+  }
+
+  .tweet-button{
+    background-color: rgb(24, 147, 241);
+    border-style: none;
+    border-radius: 18px;
+    font-size: 14px;
+    /* height: 36px;
+    width: 75px; */
+
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 16px;
+    padding-right: 16px;
+
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgb(255, 255, 255, 0.300);
+    transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    vertical-align: top;
+
+    
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .7s;
+  }
+
+  .tweet-button:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.200);
+  }
+
+  .tweet-button:active{
+    opacity: 40%;
+  }
+
+</style>
+
+<!-- class attributes label html elements-->
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<!-- <button class="join-button-modified">
+  JOIN MY CHANNEL
+</button> -->
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
+
+<!-- Take aways -->
+<!-- - You create the element using html -->
+<!-- - Then you style the element using css changing properties 1 by 1. -->
