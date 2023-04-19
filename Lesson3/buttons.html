@@ -1,0 +1,106 @@
+<!-- unique isnt visible on the page -->
+<style>
+  /* css selector */
+  /* button { */
+    .subscribe-button{
+    /* css property     css value */
+    background-color: rgb(204, 0, 0);
+    color: white;
+    border: none;
+    width: 114px;
+    height: 36px;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    /* margin = space in css */
+    margin-right: 8px;
+
+    transition: 
+      opacity .2s;
+  }
+
+  /* style that will only apply when we hover over a button */
+  /* sudo class, adds extra styles in a certain situation ex. hover */
+  .subscribe-button:hover {
+    opacity: 70%;
+
+  }
+  .subscribe-button:active {
+    opacity: 40%;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.1s;
+  }
+
+  
+  /* target the class */
+  .join-button{
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(24, 112, 189);
+    border-radius: 2px;
+    border-width: 1px;
+    color: rgb(24, 112, 189);
+    font-size: 14px;
+    height: 36px;
+    width: 60px;
+    cursor: pointer;
+    margin-right: 8px;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .7s;
+  }
+  .join-button:hover{
+    background-color: rgb(24, 112, 189);
+    color: white;
+
+  }
+  .join-button:active{
+    opacity: 40%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.05s;
+  }
+
+  .tweet-button{
+    background-color: rgb(24, 147, 241);
+    border-style: none;
+    border-radius: 18px;
+    font-size: 14px;
+    height: 36px;
+    width: 75px;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgb(255, 255, 255, 0.300);
+    transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .7s;
+  }
+
+  .tweet-button:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.200);
+  }
+
+  .tweet-button:active{
+    opacity: 40%;
+  }
+
+</style>
+
+<!-- class attributes label html elements-->
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
+
+<!-- Take aways -->
+<!-- - You create the element using html -->
+<!-- - Then you style the element using css changing properties 1 by 1. -->
