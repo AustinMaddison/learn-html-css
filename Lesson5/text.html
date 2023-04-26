@@ -1,7 +1,7 @@
 <style>
   /* due to css specificity, the selector that targets the class will have priority here because it is most specific */
   p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -33,7 +33,25 @@
     width: 320px;
 
     margin-top: 20px;
+    margin-bottom: 100px;
   }
+
+  
+  .promotion-text{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(201, 73, 73);
+    margin-top: 20px;
+    padding: 20px 10px;
+  }
+
+  .shop-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
 </style>
 
 <p class="video-title">
@@ -51,3 +69,10 @@
 <p class="video-description">
   Have you ever thought of expediting your inevitable demise? At WatchMojo we present, 10 more reasons why you should kick the bucket in hopes you will find your 13th reason why!
 </p>
+
+<!-- text element, element in line text -->
+<p class="promotion-text">
+  Shop early for the best selection of holiday favourites. <span class="shop-link">Shop now &#62;</span>
+</p>
+
+
